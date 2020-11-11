@@ -44,7 +44,7 @@ function activate_ccache {
     ln -s /parent-home/.ccache $HOME/.ccache
 
     # Now install ccache
-    pip install ccache
+    sudo apt-get install -y ccache
 
     # Create fake compilers and prepend them to the PATH
     # Note that yum is supposed to create these for us,
